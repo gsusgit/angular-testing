@@ -1,0 +1,18 @@
+{
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "baseUrl": "http://localhost:4200",
+  "chromeWebSecurity": false,
+  "fixturesFolder": "tests/e2e/fixtures",
+  "integrationFolder": "tests/e2e/integration",
+  "pluginsFile": "tests/e2e/plugins/index.ts",
+  "supportFile": "tests/e2e/support/index.ts",
+  "screenshotsFolder": "tests/output/screenshots",
+  "videosFolder": "tests/output/videos",
+  "trashAssetsBeforeRuns": true,
+  "viewportWidth": 1240,
+  "viewportHeight": 740,
+  "env": {
+    "apiUrl": "https://proton-angular-builders.herokuapp.com/v1/",
+    "failOnStatusCode": true
+  }
+}

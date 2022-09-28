@@ -1,0 +1,37 @@
+{
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.organizeImports",
+    "source.fixAll",
+    "source.fixAll.eslint"
+  ],
+  "eslint.validate": ["javascript", "typescript"],
+  "files.eol": "\n",
+  "spellright.language": ["en", "es"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext", "html"],
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "github.copilot.enable": {
+    "*": false
+  },
+  "window.zoomLevel": 2,
+  "editor.lineNumbers": "off",
+  "editor.fontSize": 12
+}

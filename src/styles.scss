@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import '../node_modules/bulma/sass/utilities/initial-variables.sass';
+
+// Override fonts
+$family-sans-serif: 'Lato', sans-serif;
+$family-secondary: 'Montserrat';
+
+// Override colors with https://www.nordtheme.com/
+$primary: #8fbcbb;
+$link: #81a1c1;
+$info: #88c0d0;
+$success: #a3be8c;
+$warning: #ebcb8b;
+$danger: #bf616a;
+$dark: #2e3440;
+$text: #3b4252;
+
+// Import main parts of Bulma
+@import '../node_modules/bulma/sass/utilities/_all.sass';
+@import '../node_modules/bulma/sass/base/_all.sass';
+@import '../node_modules/bulma/sass/helpers/_all.sass';
+
+// Import especific parts of Bulma
+@import '../node_modules/bulma/sass/components/card.sass';
+@import '../node_modules/bulma/sass/components/level.sass';
+@import '../node_modules/bulma/sass/components/navbar.sass';
+@import '../node_modules/bulma/sass/components/message.sass';
+@import '../node_modules/bulma/sass/components/modal.sass';
+
+@import '../node_modules/bulma/sass/elements/button.sass';
+@import '../node_modules/bulma/sass/elements/icon.sass';
+@import '../node_modules/bulma/sass/elements/tag.sass';
+@import '../node_modules/bulma/sass/elements/notification.sass';
+@import '../node_modules/bulma/sass/elements/title.sass';
+
+@import '../node_modules/bulma/sass/form/_all.sass';
+
+@import '../node_modules/bulma/sass/grid/columns.sass';
+
+@import '../node_modules/bulma/sass/layout/footer.sass';
+@import '../node_modules/bulma/sass/layout/hero.sass';
+@import '../node_modules/bulma/sass/layout/section.sass';

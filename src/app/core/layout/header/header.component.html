@@ -1,0 +1,21 @@
+<header>
+  <nav class="navbar is-fixed-top has-shadow pb4 is-family-secondary "
+       role="navigation"
+       aria-label="main navigation">
+    <span role="banner"
+          class="navbar-brand is-white ml-4">
+      <a id="app-name"
+         class="is-size-2 has-text-primary"
+         data-test-id="app-name"
+         [routerLink]="['/']">Angular Budget</a>
+    </span>
+    <ab-notification class="navbar-item pt-0 pb-0 ml-4"></ab-notification>
+    <span class="navbar-menu">
+      <span class="navbar-end ">
+        <a [routerLink]="['/about']"
+           class="navbar-item is-size-3 has-text-primary">About</a>
+        <ab-user-login></ab-user-login>
+      </span>
+    </span>
+  </nav>
+</header>
