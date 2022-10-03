@@ -27,7 +27,7 @@
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.fontFamily": " 'Fira Code', 'Cascadia Mono PL', Consolas, 'Courier New', monospace",
-  "editor.fontSize": 14,
+  "editor.fontSize": 12,
   "editor.fontLigatures": false,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
@@ -125,7 +125,7 @@
     "editorBracketHighlight.foreground6": "#FF0000",
     "tab.activeBackground": "#193549"
   },
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Cobalt2",
   "workbench.iconTheme": "material-icon-theme",
   "window.zoomLevel": 1
 }
