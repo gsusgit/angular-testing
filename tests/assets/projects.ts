@@ -9,7 +9,7 @@ export const PROJECTS: Project[] = [
     endDate: new Date(2024, 11, 31),
     budget: 5000,
     status: 'active',
-    ownerId: 'world_admin',
+    userId: 'world_admin',
   },
   {
     id: 'conquer_mars',
@@ -18,6 +18,6 @@ export const PROJECTS: Project[] = [
     startDate: new Date(2022, 0, 1),
     budget: 99000,
     status: 'planned',
-    ownerId: 'world_admin',
+    userId: 'world_admin',
   },
 ];

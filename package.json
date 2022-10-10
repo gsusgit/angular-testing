@@ -24,7 +24,8 @@
     "e2e": "ng e2e",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "e2e:prod": "cypress run --config-file=cypress-prod.json"
+    "e2e:prod": "cypress run --config-file=cypress-prod.json",
+    "api": "json-server-auth ./database/db.json -r ./database/routes.json"
   },
   "private": true,
   "dependencies": {
@@ -50,10 +51,13 @@
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "angular-cli-ghpages": "^1.0.0-rc.2",
+    "cypress": "latest",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "jasmine-core": "~3.8.0",
+    "json-server": "^0.17.0",
+    "json-server-auth": "^2.1.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
@@ -63,7 +67,6 @@
     "prettier": "^2.3.2",
     "prettier-eslint": "^13.0.0",
     "standard-version": "^9.3.1",
-    "typescript": "~4.3.5",
-    "cypress": "latest"
+    "typescript": "~4.3.5"
   }
 }

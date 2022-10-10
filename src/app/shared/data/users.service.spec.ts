@@ -24,7 +24,7 @@ fdescribe('GIVEN the UsersService isolated from remote server', () => {
   let service: UsersService;
   let controller: HttpTestingController;
   let testRequest: TestRequest;
-  const remoteUrl = 'https://proton-angular-builders.herokuapp.com/v1/users/';
+  const remoteUrl = 'http://localhost:3000/users/';
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],

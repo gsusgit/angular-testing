@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiHost: 'https://proton-angular-builders.herokuapp.com/v1/',
+  apiHost: 'http://localhost:3000/',
 };
 
 /*

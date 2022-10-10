@@ -1,6 +1,6 @@
 {
   "$schema": "https://on.cypress.io/cypress.schema.json",
-  "baseUrl": "https://angularbuilders.github.io/angular-budget/",
+  "baseUrl": "http://localhost:4200/",
   "chromeWebSecurity": false,
   "fixturesFolder": "tests/e2e/fixtures",
   "integrationFolder": "tests/e2e/integration",
@@ -13,7 +13,7 @@
   "viewportHeight": 740,
   "failOnStatusCode": false,
   "env": {
-    "apiUrl": "https://proton-angular-builders.herokuapp.com/v1/",
+    "apiUrl": "http://localhost:3000/",
     "failOnStatusCode": false
   }
 }

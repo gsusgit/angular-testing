@@ -1,3 +1,4 @@
+import { UsersService } from '@ab/data/users.service';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
@@ -8,4 +9,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-budget';
+  constructor(users: UsersService) {
+    //users.postRegistration$().subscribe(res => console.log(res));
+  }
 }

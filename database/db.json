@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "email": "admin@world.org",
+      "password": "$2a$10$lRC5Frpy434Pj1fSn2SnF.B3sMbCU6P19hWmIue66uK1/SxDCqW7e",
+      "id": "world_admin",
+      "name": "World Admin"
+    }
+  ],
+  "projects": [
+    {
+      "id": "rule_the_world",
+      "name": "Rule the world",
+      "description": "Take over the world",
+      "startDate": "2019-12-31T23:00:00.000Z",
+      "endDate": "2024-12-30T23:00:00.000Z",
+      "budget": 500,
+      "status": "active",
+      "userId": "world_admin"
+    },
+    {
+      "id": "conquer_mars",
+      "name": "Conquer Mars",
+      "description": "Establish a civilization on Mars",
+      "startDate": "2021-12-31T23:00:00.000Z",
+      "budget": 990,
+      "status": "planned",
+      "userId": "world_admin"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "create_a_virus",
+      "name": "Create a virus",
+      "description": "A modified version of a current virus",
+      "done": true,
+      "projectId": "rule_the_world",
+      "userId": "world_admin"
+    },
+    {
+      "id": "deploy_the_virus",
+      "name": "Deploy the virus",
+      "description": "Release the virus to the environment on a cute pet",
+      "done": true,
+      "projectId": "rule_the_world",
+      "userId": "world_admin"
+    },
+    {
+      "id": "start_a-war",
+      "name": "Start a war",
+      "description": "Start a war against the world",
+      "done": false,
+      "projectId": "rule_the_world",
+      "userId": "world_admin"
+    },
+    {
+      "id": "have_a_rocket",
+      "name": "Have a rocket",
+      "description": "A very big and powerful rocket",
+      "done": true,
+      "projectId": "conquer_mars",
+      "userId": "world_admin"
+    },
+    {
+      "id": "have_a_spaceship",
+      "name": "Have a spaceship",
+      "description": "A modern spaceship",
+      "done": false,
+      "projectId": "conquer_mars",
+      "userId": "world_admin"
+    }
+  ]
+}

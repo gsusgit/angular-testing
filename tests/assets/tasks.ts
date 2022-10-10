@@ -6,7 +6,7 @@ export const TASKS: Task[] = [
     description: 'A modified version of a current virus',
     done: true,
     projectId: 'rule_the_world',
-    ownerId: 'world_admin',
+    userId: 'world_admin',
   },
   {
     id: 'deploy_the_virus',
@@ -14,7 +14,7 @@ export const TASKS: Task[] = [
     description: 'Release the virus to the environment on a cute pet',
     done: true,
     projectId: 'rule_the_world',
-    ownerId: 'world_admin',
+    userId: 'world_admin',
   },
   {
     id: 'have_a_rocket',
@@ -22,6 +22,6 @@ export const TASKS: Task[] = [
     description: 'A very big rocket ',
     done: false,
     projectId: 'conquer_mars',
-    ownerId: 'world_admin',
+    userId: 'world_admin',
   },
 ];

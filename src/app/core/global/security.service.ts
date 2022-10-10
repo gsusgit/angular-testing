@@ -12,7 +12,7 @@ import { SecurityStore } from './security.store';
 })
 export class SecurityService {
   public user$: Observable<User | undefined>;
-
+  public userId = '';
   constructor(
     private users: UsersService,
     private securityStore: SecurityStore,
@@ -55,6 +55,7 @@ export class SecurityService {
     const payload = token.split('.')[1];
     const decodedPayload = atob(payload);
     const user = JSON.parse(decodedPayload);
-    return user['id'];
+    this.userId = user['sub'] || '';
+    return this.userId;
   }
 }

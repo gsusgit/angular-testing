@@ -26,7 +26,7 @@ fdescribe('GIVEN the TokenInterceptor with a fake security service', () => {
   let service: UsersService;
   let controller: HttpTestingController;
   let testRequest: TestRequest;
-  const inputBaseUrl = 'https://proton-angular-builders.herokuapp.com/v1/users/';
+  const inputBaseUrl = 'http://localhost:3000/users/';
   beforeEach(() => {
     // Arrange
     const fakeSecurityStore = { getToken: () => 'token' };

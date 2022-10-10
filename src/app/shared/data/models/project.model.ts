@@ -8,5 +8,5 @@ export interface Project {
   budget: number;
   status: ProjectStatus;
   id: string;
-  ownerId?: string;
+  userId?: string;
 }

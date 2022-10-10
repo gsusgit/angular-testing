@@ -14,7 +14,7 @@ fdescribe('GIVEN the ProjectsService isolated from remote server', () => {
   let inputBaseUrl: string;
   beforeEach(() => {
     // Arrange
-    inputBaseUrl = 'https://proton-angular-builders.herokuapp.com/v1/projects/';
+    inputBaseUrl = 'http://localhost:3000/projects/';
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
     });

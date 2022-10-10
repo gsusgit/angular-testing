@@ -12,7 +12,7 @@
   "viewportWidth": 1240,
   "viewportHeight": 740,
   "env": {
-    "apiUrl": "https://proton-angular-builders.herokuapp.com/v1/",
+    "apiUrl": "http://localhost:3000/",
     "failOnStatusCode": true
   }
 }

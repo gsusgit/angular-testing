@@ -3,6 +3,6 @@ export interface Task {
   description?: string;
   done: boolean;
   id: string;
-  ownerId?: string;
+  userId?: string;
   projectId?: string;
 }
