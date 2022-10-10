@@ -35,13 +35,15 @@ fdescribe('GIVEN the UsersService isolated from remote server', () => {
   });
 
   describe('WHEN getTokenByCredentials$ is called', () => {
-    const input: { email: string; password: string } = { email: '', password: '' };
+    const input: { email: string; password: string } = {
+      email: '',
+      password: '',
+    };
     beforeEach(() => {
       service.getTokenByCredentials$(input).subscribe();
     });
     it('THEN should send the credentials as parameters', () => {
-      const expected = `${remoteUrl}credentials?email=${input.email}&password=${input.password}`;
-      controller.expectOne(expected);
+      controller.expectOne({ url: 'http://localhost:3000/login' }).flush({ input });
     });
   });
 

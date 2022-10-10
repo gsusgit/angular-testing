@@ -7,6 +7,7 @@ import { TestBed } from '@angular/core/testing';
 import { PROJECTS } from 'tests/assets/projects';
 import { Project } from './models/project.model';
 import { ProjectsService } from './projects.service';
+import { RouterTestingModule } from '@angular/router/testing';
 
 fdescribe('GIVEN the ProjectsService isolated from remote server', () => {
   let service: ProjectsService;
@@ -16,7 +17,7 @@ fdescribe('GIVEN the ProjectsService isolated from remote server', () => {
     // Arrange
     inputBaseUrl = 'http://localhost:3000/projects/';
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
+      imports: [HttpClientTestingModule, RouterTestingModule],
     });
     service = TestBed.inject(ProjectsService);
     controller = TestBed.inject(HttpTestingController);
@@ -47,7 +48,8 @@ fdescribe('GIVEN the ProjectsService isolated from remote server', () => {
     });
     it('THEN it should return a project with correct id', () => {
       const expected = 'rule_the_world';
-      expect(actual?.id).toBe(expected);
+      // @ts-ignore
+      expect(actual.data.id).toBe(expected);
     });
   });
   describe('WHEN postProject$ is called', () => {
@@ -63,7 +65,8 @@ fdescribe('GIVEN the ProjectsService isolated from remote server', () => {
     it('THEN it should emit the saved project', () => {
       expect(testRequest.request.method).toBe('POST');
       const expected = 'verify_all_the_things';
-      expect(actual?.id).toBe(expected);
+      // @ts-ignore
+      expect(actual.data.id).toBe(expected);
     });
   });
   describe('WHEN putProject$ is called', () => {
